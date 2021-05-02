@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="description" content="This sentence will appear under the link in search engine results.">
+	<meta name="keywords" content="list,of,words,separated,by,commas,that,describe,your,site">
+	<meta name="author" content="Jessica Fine">
+
+	<!-- viewport -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- shiv which should be a shim -->
+    <!--[if lt IE 9]>
+	  <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+	<![endif]-->
+
+	<!-- tab title -->
+	<title>Jessica Fine Photography</title>
+
+	<!-- favicon link -->
+	<link rel="shortcut icon" href="images/favicon.ico">
+
+	<!-- stylesheets -->
+	<link rel="stylesheet" href="styles/normalize.css">
+	<link rel="stylesheet" href="aboutme/main.css">
+	<link rel="stylesheet" href="styles/slicknav.css">
+	<link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+
+   <!-- slicknav -->
+   <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>   <!-- Link to jQuery Content Delivery Network - Necessary for SlickNav to work correctly -->
+   <script src="js/jquery.slicknav.min.js"></script>                     <!-- Link to the slicknav file inside the js folder - Necessary for SlickNav to work correctly -->
+
+   <!-- slicknav javascript - this javascript code will use the UL inside the nav_menu tag to build the same menu in slickNav format -->
+   <script type="text/javascript">
+	   $(document).ready(function(){
+		   $('.nav_menu').slicknav({prependTo:"#mobilemenu"});
+	   });
+   </script> 
+</head>
+<body>
+	<header class="clearfix">
+		<a href="index.html"><img src="images/jflogo.jpg"></a>
+		<h1><a href="aboutme.html">About Jessica Fine</a></h1>
+    </header>
+
+    <nav id="mobilemenu"></nav>
+	<nav class="nav_menu">
+    	<ul>
+        	<li><a href="index.html" class="current">Home</a></li>
+        	<li><a href="naturephotos.html" class="current">Nature Photography</a></li>
+			<li><a href="nycphotos.html" class="current">NYC Photography</a></li>
+			<li><a href="aboutme.html" class="current">About Me</a></li>
+    	</ul>
+	</nav>
+	<nav class="bookmarks">
+		<ul>
+			<li><a href="aboutme.html">About Me</a></li>
+			<li><a href="naturephotos.html">Nature Photography</a></li>
+			<li><a href="nycphotos.html">NYC Photography</a></li>
+			<li><a href="index.html">Home</a></li>
+		</ul>
+			<button onclick="topFunction()" id="myBtn" title="Go to top">Return To Top</button>
+		</nav>
+		<script>
+			// When the user scrolls down 20px from the top of the document, show the button
+			window.onscroll = function() {scrollFunction()};
+			function scrollFunction() {
+			  if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+				document.getElementById("myBtn").style.display = "block";
+			  } else {
+				document.getElementById("myBtn").style.display = "none";
+			  }
+			}
+			// When the user clicks on the button, scroll to the top of the document
+			function topFunction() {
+			  document.body.scrollTop = 0;
+			  document.documentElement.scrollTop = 0;
+			}
+		</script>
+	<section> 
+		<h1>About Jessica Fine</h1>
+		<img src="aboutme/me.JPG" height="20%" width="20%">
+<p> Jessica Fine is a junior Education major at Endicott College with a passion for photography. She first began photography as a freshman in high school at Churchill School and Center, a private institution located in Manhattan, New York City. During her first two years as an undergraduate student at Endicott, Jessica lost her passion because she could not include photography in her busy studies, being on track to become a licensed teacher. At the end of her sophomore year, she realized that she did not want to be a licensed teacher, so instead, she switched her major to Education Studies. That meant that she now had more flexibility with her courses and could take classes that she wanted, including psychology and photography.Her goal is to become a school counselor and to be able to have jobs as a photographer on the side. <br>
+	<br> During the summer before her Junior year, Jessica's parents purchased her a Nikon-D3500, a gift she cherishes to this day.Throughout the following winter and spring semester, Jessica took a variety of pictures and regained her passion for the art of photography. The collection that is featured on this website is a inside look of two places that she calls home.</p>
+	</section>
+	<script>
+		window.onload = function() {
+			var d = new Date();
+			document.getElementById("copyright").innerHTML = d.getFullYear();
+		}
+	</script>
+
+	<footer>
+		<p>&copy; <span id="copyright"></span> Jessica Fine Photography</p>
+	</footer>
+
+</body>
+
+</html>
+
+
